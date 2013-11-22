@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Asqlmap-bb : Automated sqlmap for BackBox" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Asqlmap-bb</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Gualty/asqlmap-bb">View on GitHub</a>
+
+          <h1 id="project_title">Asqlmap-bb</h1>
+          <h2 id="project_tagline">Automated sqlmap for BackBox</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Gualty/asqlmap-bb/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Gualty/asqlmap-bb/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="asqlmap---automated-sqlmap-for-backbox" class="anchor" href="#asqlmap---automated-sqlmap-for-backbox"><span class="octicon octicon-link"></span></a>asqlmap - Automated sqlmap for BackBox</h1>
+
+<p>Asqlmap is a terminal interface to automatize the famous SQL Injection's tool sqlmap.
+It provides a very simple interface to quickly perform sqlmap's tests on a specific target.</p>
+
+<p>This version of asqlmap was tested on BackBox Linux.</p>
+
+<p>Asqlmap is very simple to use: you only need to specify the target. Then from the interface you can choose which test you want to perform.</p>
+
+<p>With asqlmap you can:</p>
+
+<p>1) Vulnerability check and information research (Databases,tables)</p>
+
+<p>2) Users, passwords and privileges research</p>
+
+<p>3) Open SQL Shell</p>
+
+<p>4) Open OS Shell</p>
+
+<p>5) Dump single table</p>
+
+<p>6) Dump single database</p>
+
+<p>7) Dump all databases</p>
+
+<p>Asqlmap is pre-configured to keeps your anonymity safe using Tor for every operation and using a random User Agent for each test.</p>
+
+<h2>
+<a name="screenshot" class="anchor" href="#screenshot"><span class="octicon octicon-link"></span></a>Screenshot</h2>
+
+<p><img src="http://imageshack.com/a/img856/1854/sacm.png" alt="asqlmap for BackBox"></p>
+
+<h2>
+<a name="what-is-sqlmap" class="anchor" href="#what-is-sqlmap"><span class="octicon octicon-link"></span></a>What is sqlmap?</h2>
+
+<p>sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester and a broad range of switches lasting from database fingerprinting, over data fetching from the database, to accessing the underlying file system and executing commands on the operating system via out-of-band connections.</p>
+
+<p>For further information about sqlmap visit their github webpage: <a href="https://github.com/sqlmapproject/sqlmap">https://github.com/sqlmapproject/sqlmap</a></p>
+
+<h2>
+<a name="how-to-use-asqlmap" class="anchor" href="#how-to-use-asqlmap"><span class="octicon octicon-link"></span></a>How to use asqlmap</h2>
+
+<p>Before you can run asqlmap you need to set execution permission</p>
+
+<p>chmod +x asqlmap.sh</p>
+
+<h2>
+<a name="test-an-url" class="anchor" href="#test-an-url"><span class="octicon octicon-link"></span></a>Test an URL</h2>
+
+<p>./asqlmap.sh "URL"</p>
+
+<p>Eg. ./asqlmap.sh "<a href="http://www.example.com">http://www.example.com</a>"</p>
+
+<p>NOTE: Don't forget to add " at the beginning and at the end of the URL to support more than one GET variables.</p>
+
+<h2>
+<a name="search-url-with-google-dork" class="anchor" href="#search-url-with-google-dork"><span class="octicon octicon-link"></span></a>Search URL with Google Dork</h2>
+
+<p>./asqlmap.sh -g GOOGLEDORK</p>
+
+<p>Eg. ./asqlmap.sh -g inurl:index.php?id=</p>
+
+<h2>
+<a name="know-issues" class="anchor" href="#know-issues"><span class="octicon octicon-link"></span></a>Know issues</h2>
+
+<p>None at the moment</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Asqlmap-bb maintained by <a href="https://github.com/Gualty">Gualty</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
