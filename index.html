@@ -88,11 +88,23 @@ It provides a very simple interface to quickly perform sqlmap's tests on a speci
 <h2>
 <a name="test-an-url" class="anchor" href="#test-an-url"><span class="octicon octicon-link"></span></a>Test an URL</h2>
 
-<p>./asqlmap.sh "URL"</p>
+<p>USAGE:
+    ./asqlmap.sh URL [OPTIONS]</p>
 
-<p>Eg. ./asqlmap.sh "<a href="http://www.example.com">http://www.example.com</a>"</p>
+<p>Options:</p>
+
+<pre><code>-r &lt;risk value&gt;     Risk of test to perform (0-3, default 1)
+
+-l &lt;level value&gt;    Level of test to perform (1-5, default 1)
+
+-h,-help        Show this help
+</code></pre>
+
+<p>Eg. ./asqlmap.sh "<a href="http://www.example.com">http://www.example.com</a>" -r 2 -l 3</p>
 
 <p>NOTE: Don't forget to add " at the beginning and at the end of the URL to support more than one GET variables.</p>
+
+<p>See sqlmap documentation to understand risk (<a href="https://github.com/sqlmapproject/sqlmap/wiki/Usage#risk">https://github.com/sqlmapproject/sqlmap/wiki/Usage#risk</a>) and level (<a href="https://github.com/sqlmapproject/sqlmap/wiki/Usage#level">https://github.com/sqlmapproject/sqlmap/wiki/Usage#level</a>) options</p>
 
 <h2>
 <a name="search-url-with-google-dork" class="anchor" href="#search-url-with-google-dork"><span class="octicon octicon-link"></span></a>Search URL with Google Dork</h2>
