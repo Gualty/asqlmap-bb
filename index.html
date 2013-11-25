@@ -88,18 +88,27 @@ It provides a very simple interface to quickly perform sqlmap's tests on a speci
 <h2>
 <a name="test-an-url" class="anchor" href="#test-an-url"><span class="octicon octicon-link"></span></a>Test an URL</h2>
 
-<p>USAGE:
-    ./asqlmap.sh URL [OPTIONS]</p>
+<p>USAGE:</p>
 
-<p>Options:</p>
+<pre><code>./asqlmap.sh "URL" [OPTIONS]
+</code></pre>
+
+<p>Options after URL:</p>
 
 <pre><code>-r &lt;risk value&gt;     Risk of test to perform (0-3, default 1)
 
 -l &lt;level value&gt;    Level of test to perform (1-5, default 1)
+</code></pre>
 
--h,-help        Show this help
+<p>Options without URL:</p>
 
--v          Show the version of asqlmap
+<pre><code>-g &lt;google dork&gt;    Search for Google Dorks
+
+-purge-output       Securely erase the sqlmap output directory
+
+-h,-help            Show this help
+
+-v                  Show the version of asqlmap
 </code></pre>
 
 <p>Eg. ./asqlmap.sh "<a href="http://www.example.com">http://www.example.com</a>" -r 2 -l 3</p>
