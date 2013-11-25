@@ -122,7 +122,13 @@ It provides a very simple interface to quickly perform sqlmap's tests on a speci
 
 <p>./asqlmap.sh -g GOOGLEDORK</p>
 
-<p>Eg. ./asqlmap.sh -g inurl:index.php?id=</p>
+<p>Eg. ./asqlmap.sh -g "inurl:index.php?id="</p>
+
+<p>To scan a website for Google Dork</p>
+
+<p>Eg. ./asqlmap.sh -g "site:<a href="http://www.example.com">http://www.example.com</a> ext:php"</p>
+
+<p>NOTE: The funtion Google Dork will not use Tor, so you will not be anonymous.</p>
 
 <h2>
 <a name="know-issues" class="anchor" href="#know-issues"><span class="octicon octicon-link"></span></a>Know issues</h2>
